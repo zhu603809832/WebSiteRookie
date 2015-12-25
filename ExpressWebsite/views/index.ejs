@@ -7,25 +7,198 @@
 		<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- ����3��meta��ǩ*����*������ǰ�棬�κ��������ݶ�*����*������� -->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
 
-    <!-- Bootstrap -->
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="/lib/bootstrap/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/lib/bootstrap/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <!-- My Bootstrap -->
+    <!--<link href="/lib/bootstrap/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<script src="/lib/bootstrap/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>-->
+    
+    <!-- CDN Bootstrap -->
+    <script src="//cdn.bootcss.com/bootstrap/3.0.1/js/bootstrap.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+    
+    <link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <script>
 			$(document).ready(function(){
   			$("p").click(function(){
-    		$(this).hide();
+    		<!-- $(this).hide(); -->
   		});
 			});
 		</script>
     <h1><%= title %> Hello, World!!</h1>
-    <p>Welcome to <%= title %></p>
-		<p>click me!!!</p>
-		<p>click me!!!</p>
-		<p>click me!!!</p>
+		<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							 <a href="#">Link</a>
+						</li>
+						<li>
+							 <a href="#">Link</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#">Action</a>
+								</li>
+								<li>
+									 <a href="#">Another action</a>
+								</li>
+								<li>
+									 <a href="#">Something else here</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									 <a href="#">Separated link</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									 <a href="#">One more separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" />
+						</div> <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							 <a href="#">Link</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#">Action</a>
+								</li>
+								<li>
+									 <a href="#">Another action</a>
+								</li>
+								<li>
+									 <a href="#">Something else here</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									 <a href="#">Separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+			<div class="carousel slide" id="carousel-310561">
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#carousel-310561">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-310561" class="active">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-310561">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img alt="" src="/image/1.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								大三巴牌坊
+							</h4>
+							<p>
+								大三巴牌坊，其正式名称为圣保禄大教堂遗址（葡萄牙语：Ruínas da Antiga Catedral de São Paulo），一般称为大三巴或牌坊，是澳门天主之母教堂（圣保禄教堂，于1580年竣工）正面前壁的遗址。大三巴牌坊是澳门的标志性建筑物之一，同时也为“澳门八景”之一。
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="/image/2.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								玫瑰圣母堂
+							</h4>
+							<p>
+								玫瑰圣母堂，正名为玫瑰圣母堂及圣多明我教堂，位于澳门的市中心，至今已有400多年历史。属于旧圣道明会院。
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="/image/3.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								妈阁庙
+							</h4>
+							<p>
+								妈阁庙，位于湄洲湾北岸山亭镇山柄村麒山之巅，阁共四层，高32.3米，取妈祖农历三月廿三诞辰之意，总体造型端庄古朴，轻盈灵动。居下仰观、遥遥而望、亦或登阁远眺，不同角度的妈祖阁有着截然不同的神韵。低空俯瞰妈祖阁，可见其于苍翠怀抱中悄然屹立，面朝大海，似海棠花开，俊秀动人。
+							</p>
+						</div>
+					</div>
+				</div> <a class="left carousel-control" href="#carousel-310561" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-310561" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+			<div class="jumbotron">
+				<h1>
+					从澳门到珠海，可以有更好的旅游
+				</h1>
+				<p>
+					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+				</p>
+				<p>
+					 <a class="btn btn-primary btn-large" href="#">Learn more</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-4 column">
+			<h2>
+				景点
+			</h2>
+			<p>
+				澳门被划分为澳门半岛和属于离岛的氹仔岛、路氹岛和路环岛。澳门半岛上最出名的景区就是澳门历史城区，它是中国境内现存最古老、规模最大、保存最完整和最集中的东西方风格共存建筑群，当中包括中国最古老的教堂遗址和修道院、最古老的基督教坟场、最古老的西式炮台建筑群、第一座西式剧院、第一座现代化灯塔和第一所西式大学等。它已成功列入《世界遗产名录》，是中国至今拥有第31个“世界遗产”项目，这里也是澳门旅游景点最集中的地方。
+澳门的离岛上也分布着一些著名景点。在氹仔岛上可以看到著名的观音庙、嘉谟圣母堂、北帝庙和菩堤园等宗教建筑；路环岛上则有自然风光优美的黑沙海滩、竹湾海滩、妈祖文化村以及圣方济各圣堂等景点；而路氹岛上则有最出名的威尼期人度假村。
+			</p>
+			<p>
+				 <a class="btn" href="#">View details ?</a>
+			</p>
+		</div>
+		<div class="col-md-4 column">
+			<h2>
+				美食
+			</h2>
+			<p>
+				澳门美食荟萃中西南北的美食，中国菜、日本菜、韩国菜和泰国菜也是应有尽有。当然最吸引人的还是当地正宗的葡国菜和各种小食店的特色小吃，以葡式蛋挞最为有名。区域分布上，澳门本岛的美食主要集中在三盏灯区域，其中以飞能便度街上的“雅馨缅甸餐厅”最出名。还有新马路—议事亭前地—大三巴—大马路区域，聚集着玛嘉烈葡挞、义顺牛奶公司、潘荣记金钱饼、黄枝记粥面专家等著名老字号。氹仔则以老城区的海鲜、传统小吃最有名，集中在氹仔食街—官也街上。路环则有美味的黑沙滩烧烤，和葡挞的创始人安德鲁先生的老饼店。
+			</p>
+			<p>
+				 <a class="btn" href="#">View details ?</a>
+			</p>
+		</div>
+		<div class="col-md-4 column">
+			<h2>
+				文化
+			</h2>
+			<p>
+				澳门是16世纪海上丝绸之路的重要据点，是明朝中国最早的租界，是远东最早开放的特区或租界，是远东最早的传教中心，是东西文化双向交流最早基地。澳门既是商业古城，又是文化古城，文化具有“以中为主，中葡结合”的特点。澳门政府设有专门保护文物的机构。1986年向联合国申请，将澳门列入文物城。今天澳门的文化机构、团体和文化设施，除了一些专业性的表演团体外，其它方面可以说是应有尽有，只是规模较小而已。
+			</p>
+			<p>
+				 <a class="btn" href="#">View details ?</a>
+			</p>
+		</div>
+	</div>
+</div>
+
   </body>
 </html>
