@@ -24,12 +24,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/index', routes);
 app.use('/users', users);
 app.use('/register', register);
-<<<<<<< HEAD
-=======
 
->>>>>>> 7a07e0506eb1aa0e46d8c74970f0863c217335f9
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
