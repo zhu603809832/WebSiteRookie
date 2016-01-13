@@ -9,13 +9,13 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
 
     <!-- My Bootstrap 3.x-->
-    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/index.css" rel="stylesheet" type="text/css" />
-		<link href="/lib/bootstrap/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-		<link href="/lib/bootstrap/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
-		<script src="/lib/bootstrap/bootstrap-3.3.5-dist/js/jquery-1.11.3.js"></script>
-		<script src="/lib/bootstrap/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-		<script src="/lib/bootstrap/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+    <!--<link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />-->
+    <!--<link href="/stylesheets/index.css" rel="stylesheet" type="text/css" />-->
+		<!--<link href="/lib/bootstrap/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
+		<!--<link href="/lib/bootstrap/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />-->
+		<!--<script src="/lib/bootstrap/bootstrap-3.3.5-dist/js/jquery-1.11.3.js"></script>-->
+		<!--<script src="/lib/bootstrap/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>-->
+		<!--<script src="/lib/bootstrap/bootstrap-3.3.5-dist/js/bootstrap.js"></script>-->
 		
 		<!-- My Bootstrap 2.x-->
 		<!--<link href="/lib/bootstrap/bootstrap-2.3.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
@@ -25,13 +25,12 @@
 		<!--<script src="/lib/bootstrap/bootstrap-2.3.2-dist/js/bootstrap.js"></script>-->
 		
 		<!-- CDN Bootstrap -->
-		<!--<link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap.css" rel="stylesheet">-->
-    <!--<link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap-theme.css" rel="stylesheet">-->
-    <!--<link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap-theme.min.css" rel="stylesheet">-->
-    <!--<link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">-->
-    <!--<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
-    <!--<script src="//cdn.bootcss.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>-->
-    <!--<script src="//cdn.bootcss.com/bootstrap/3.0.1/js/bootstrap.js"></script>-->
+		<script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.0.0/jquery.min.js"></script>
+		<script src="//cdn.bootcss.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+		<link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
 		<div class="container">
@@ -62,16 +61,6 @@
 								<li>
 									 <a href="#">最惠商家</a>
 								</li>
-								<li class="divider">
-								</li>
-								<li>
-									 <a href="#">Separated link</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									 <a href="#">One more separated link</a>
-								</li>
 							</ul>
 						</li>
 					</ul>
@@ -82,7 +71,34 @@
 					</form>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							 <a href="#">登录</a>
+							 <!--<a href="#">登录</a>-->
+							 <a id="modal-299982" href="#modal-container-299982" role="button" class="btn" data-toggle="modal">登录</a>
+							 <!--模态对话框-->
+							 <div class="modal fade" id="modal-container-299982" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title" id="myModalLabel">
+								登录
+							</h4>
+						</div>
+						<div class="modal-body">
+							<form role="form">
+				<div class="form-group">
+					 <label for="exampleInputEmail1">邮箱地址</label><input type="email" class="form-control" id="exampleInputEmail1" />
+				</div>
+				<div class="form-group">
+					 <label for="exampleInputPassword1">密码</label><input type="password" class="form-control" id="exampleInputPassword1" />
+				</div>
+			</form>
+						</div>
+						<div class="modal-footer">
+							 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button> <button type="button" class="btn btn-primary">登录</button>
+						</div>
+					</div>
+				</div>
+			</div>
 						</li>
 						<li>
 							 <a href="register">注册</a>
@@ -94,18 +110,10 @@
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多帮助<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
 								<li>
-									 <a href="#">Action</a>
+									 <a href="#">联系客服</a>
 								</li>
 								<li>
-									 <a href="#">Another action</a>
-								</li>
-								<li>
-									 <a href="#">Something else here</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									 <a href="#">Separated link</a>
+									 <a href="#">常见问题</a>
 								</li>
 							</ul>
 						</li>
