@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var wechat = require('wechat')
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -32,6 +33,34 @@ app.use('/register', register);
 app.use('/info', info);
 app.use('/shop', shop);
 
+//wechat addby 2016/2/21 22:14:55
+var WECHAT_APP_TOKEN = "macaorestore"
+var ENCODINGAES_KEY = "addfadfa2Ea87QDG55ARTFADFAJKAK23481JADGFJ19"
+var wechat_config = {
+    token: WECHAT_APP_TOKEN,
+    appid: 'wx38108dfb53c6e504',
+    encodingAESKey: ENCODINGAES_KEY
+};
+
+app.use(express.query());
+
+//app.use('/wechat', wechat(wechat_config, function (req, res, next) {
+app.use('/wechat', wechat(WECHAT_APP_TOKEN, function (req, res, next) {
+    console.log("wechat!!!")
+    var message = req.weixin;
+    if(message.MsgType == 'text'){
+        res.reply({ type: "text", content: "you input " + message.Content});
+        /*res.reply([
+         {
+         title: 'come to my home',
+         description: 'girl and rich',
+         picurl: 'http://nodeapi.cloudfoundry.com/qrcode.jpg',
+         url: 'http://nodeapi.cloudfoundry.com/'
+         }
+         ]);
+         */
+    }
+}));
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -62,6 +91,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;
