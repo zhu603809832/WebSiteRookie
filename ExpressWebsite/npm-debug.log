@@ -1,6 +1,6 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'd:\\Program Files\\nodejs\\node.exe',
-1 verbose cli   'd:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli [ 'd:\\nodejs.0.10.40\\node.exe',
+1 verbose cli   'd:\\nodejs.0.10.40\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'start' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.40
@@ -20,8 +20,8 @@
 10 error     npm owner ls ExpressWebsite
 10 error There is likely additional logging output above.
 11 error System Windows_NT 6.2.9200
-12 error command "d:\\Program Files\\nodejs\\node.exe" "d:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-13 error cwd f:\WebSiteRookie\ExpressWebsite
+12 error command "d:\\nodejs.0.10.40\\node.exe" "d:\\nodejs.0.10.40\\node_modules\\npm\\bin\\npm-cli.js" "start"
+13 error cwd e:\WebSiteRookie\ExpressWebsite
 14 error node -v v0.10.40
 15 error npm -v 1.4.28
 16 error code ELIFECYCLE

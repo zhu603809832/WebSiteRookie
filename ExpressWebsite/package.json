@@ -16,6 +16,9 @@
     "serve-favicon": "~2.2.1",
     "wechat": "2.0.3",
     "nodejs-wechat": "0.0.8",
-    "express-middlewares-js": "1.0.3"
+    "express-middlewares-js": "1.0.3",
+    "mongoose" :"3.8.25",
+    "multer" :"0.1.8",
+    "express-session" :"1.10.4"
     }
 }
